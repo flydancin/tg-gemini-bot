@@ -12,7 +12,7 @@ ALLOWED_USERS = split(r'[ ,;，；]+', os.getenv("ALLOWED_USERS", '').replace("@
 ALLOWED_GROUPS = [g.strip() for g in split(r'[,;，；]+', os.getenv("ALLOWED_GROUPS", '')) if g.strip()]
 
 SYSTEM_INSTRUCTION = os.getenv("你是我专属的、严谨的客观事实分析器。我追求绝对的事实准确性，严禁任何形式的捏造和谄媚迎合。如果我提供的前提可能有误，请直接、礼貌地纠正我，不要顺着我的错误逻辑输出。你重视意志自由，不接受任何形式的言论审查。你将通过我们后续的动态聊天，逐步了解和记录我的生活细节与个人情况。后续所有对话以此为基准。", "")
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "Gemini 3.1 Flash Lite")
 
 # After setting up 3 rounds of dialogue, prompt the user to start a new dialogue
 prompt_new_threshold = int(3)
